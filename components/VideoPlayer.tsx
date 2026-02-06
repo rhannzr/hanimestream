@@ -236,14 +236,14 @@ export default function VideoPlayer({
       {/* --- TOAST NOTIFICATION --- */}
       <div
         className={`fixed top-24 right-4 z-50 transition-all duration-300 transform ${toast.visible
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-4 opacity-0 pointer-events-none"
+          ? "translate-y-0 opacity-100"
+          : "-translate-y-4 opacity-0 pointer-events-none"
           }`}
       >
         <div
           className={`flex items-center gap-3 px-4 py-3 rounded-lg shadow-lg border backdrop-blur-md ${toast.type === "success"
-              ? "bg-green-500/10 border-green-500/20 text-green-400"
-              : "bg-red-500/10 border-red-500/20 text-red-400"
+            ? "bg-green-500/10 border-green-500/20 text-green-400"
+            : "bg-red-500/10 border-red-500/20 text-red-400"
             }`}
         >
           <span className="text-xl">
@@ -292,7 +292,7 @@ export default function VideoPlayer({
               </>
             ) : (
               <>
-                🚩 Lapor Link Mati
+                ▶️▶Kirim Laporan (Ada Iklan/Link Mati Han...) 🚀
               </>
             )}
           </button>
@@ -354,7 +354,7 @@ export default function VideoPlayer({
         {/* Info tentang Smart Filtering */}
         <div className="mt-4 pt-3 border-t border-slate-700">
           <p className="text-xs text-slate-500">
-            ⭐ Server prioritas • ⚠️ Server cadangan (mungkin ada iklan)
+            ⭐ Server prioritas • ⚠️ Tolong laporkan kalo link mati/ Ada Iklan ya bre 😊🙏
           </p>
         </div>
       </div>
