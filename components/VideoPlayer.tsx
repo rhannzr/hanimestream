@@ -292,7 +292,7 @@ export default function VideoPlayer({
               </>
             ) : (
               <>
-                ▶️▶Kirim Laporan (Ada Iklan/Link Mati Han...) 🚀
+                ▶️ Kirim Laporan 🚀
               </>
             )}
           </button>
