@@ -42,6 +42,8 @@ export default async function WatchPage({ params }: Props) {
       <VideoPlayer
         defaultUrl={data.defaultStreamingUrl}
         serverQualities={data.server.qualities}
+        animeTitle={data.info?.title || data.title}
+        episode={data.title}
       />
 
       {/* Navigasi Next/Prev */}
@@ -75,11 +77,10 @@ export default async function WatchPage({ params }: Props) {
             <Link
               key={eps.episodeId}
               href={`/watch/${eps.episodeId}`}
-              className={`p-3 text-center rounded-lg border text-sm font-medium transition-all ${
-                eps.episodeId === slug
+              className={`p-3 text-center rounded-lg border text-sm font-medium transition-all ${eps.episodeId === slug
                   ? "bg-cyan-500 border-cyan-400 text-white" // Episode yang sedang aktif
                   : "bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700 hover:border-cyan-500/50"
-              }`}
+                }`}
             >
               Ep {eps.eps}
             </Link>
